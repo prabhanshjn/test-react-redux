@@ -19,14 +19,6 @@ jobs:
         run: |
           npm install
           npm install -g typescript@4.6.2
-      - name: Compile TS to JS for backend
-        run: |
-          cd functions
-          npm install
-      - name: Do TSC
-        run: |
-          cd functions
-          tsc
       - name: Build
         env:
           CI: false
