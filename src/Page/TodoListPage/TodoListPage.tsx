@@ -14,7 +14,7 @@ const TodoListPage: React.FC = (props) => {
     return (
       <div>
         <TodoList items={todos} />
-        <footer>Version Number: {package_json.version}</footer>
+        <footer>Version Number Current: {package_json.version}</footer>
       </div>
     )
   }
