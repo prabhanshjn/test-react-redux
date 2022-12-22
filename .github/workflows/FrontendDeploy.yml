@@ -10,11 +10,8 @@ jobs:
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v2.3.2
-      - name: Update Version Number
-        run: |
-          git config --global user.email "prabhanshjain@gmail.com"
-          git config --global user.name "prabhanshjn"
-          npm version patch -m "[RELEASE] %s"
+      - name: Update version in package.json
+        uses: maks-stupak/gh-action-bump-version@v7.1.5
       - name: Install Dependencies
         run: |
           npm install
