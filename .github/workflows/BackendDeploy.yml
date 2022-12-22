@@ -23,7 +23,6 @@ jobs:
           cd functions
           npm install
           tsc
-      # Deploying the functions to firebase
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
         with:
