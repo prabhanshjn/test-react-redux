@@ -1,9 +1,9 @@
-import React, { version } from "react"
+import React from "react"
 import { useSelector } from "react-redux"
 import { withRouter } from "react-router-dom"
 import TodoList from "../../Component/TodoList/TodoList"
-
 import { ApplicationState } from "../../Redux/reducers/rootReducer"
+import package_json from "../../../package.json"
 
 const TodoListPage: React.FC = (props) => {
   const todos = useSelector((state: ApplicationState) => {
@@ -14,7 +14,7 @@ const TodoListPage: React.FC = (props) => {
     return (
       <div>
         <TodoList items={todos} />
-        <footer>{version}</footer>
+        <footer>{package_json.version}</footer>
       </div>
     )
   }
