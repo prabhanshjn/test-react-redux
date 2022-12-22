@@ -14,7 +14,7 @@ jobs:
         run: |
           git config --global user.email "prabhanshjain@gmail.com"
           git config --global user.name "prabhanshjn"
-          npm version major
+          npm version patch -m "[RELEASE] %s"
       - name: Install Dependencies
         run: |
           npm install
