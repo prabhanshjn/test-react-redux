@@ -24,7 +24,9 @@ jobs:
           cd functions
           npm install
       - name: Do TSC
-        run: tsc
+        run: |
+          cd functions
+          tsc
       - name: Build
         env:
           CI: false
