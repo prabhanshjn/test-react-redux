@@ -1,4 +1,4 @@
-import React from "react"
+import React, { version } from "react"
 import { useSelector } from "react-redux"
 import { withRouter } from "react-router-dom"
 import TodoList from "../../Component/TodoList/TodoList"
@@ -14,6 +14,7 @@ const TodoListPage: React.FC = (props) => {
     return (
       <div>
         <TodoList items={todos} />
+        <footer>{version}</footer>
       </div>
     )
   }
