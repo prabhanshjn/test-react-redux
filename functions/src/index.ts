@@ -5,7 +5,7 @@ import * as functions from "firebase-functions"
 //
 export const helloWorld = functions.https.onRequest((request, response) => {
   functions.logger.info("Hello logs!", { structuredData: true })
-  response.send("Hello TodoList New current version!")
+  response.send("Hello TodoList New current version New!")
 })
 
 console.log("function started")
